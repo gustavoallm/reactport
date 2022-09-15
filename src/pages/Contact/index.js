@@ -19,7 +19,7 @@ function Contact() {
                         <a href="tel://+551999419-7044">
                             <span>+55 19 99419-7044</span>
                         </a>
-                        <a href="https://goo.gl/maps/9n1gnKtCyUpi26Sy6" target="_blank">
+                        <a href="https://goo.gl/maps/9n1gnKtCyUpi26Sy6" target="_blank" rel="noreferrer">
                             <span>Americana SP, Brasil</span>
                         </a>
                     </div>
@@ -27,11 +27,17 @@ function Contact() {
             </div>
             <span>
                 Photo by{' '}
-                <a href="https://unsplash.com/@rodlong?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                <a
+                    href="https://unsplash.com/@rodlong?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    rel="noreferrer"
+                >
                     Rod Long
                 </a>{' '}
                 on{' '}
-                <a href="https://unsplash.com/t/textures-patterns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                <a
+                    href="https://unsplash.com/t/textures-patterns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    rel="noreferrer"
+                >
                     Unsplash
                 </a>
             </span>

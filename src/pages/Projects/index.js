@@ -25,10 +25,10 @@ function Projects() {
                     <br />
                     <br />
                     <div className="access">
-                        <a href="https://projeto-prime.netlify.app/" target="_blank">
+                        <a href="https://projeto-prime.netlify.app/" target="_blank" rel="noreferrer">
                             Access PrimeFlix
                         </a>
-                        <a href="https://github.com/gustavoallm/primeflix" target="_blank">
+                        <a href="https://github.com/gustavoallm/primeflix" target="_blank" rel="noreferrer">
                             Repository on GitHub
                         </a>
                     </div>
@@ -47,10 +47,18 @@ function Projects() {
                     <br />
                     <br />
                     <div className="access">
-                        <a href="https://gustavoallmport.netlify.app/#inicio" target="_blank">
+                        <a
+                            href="https://gustavoallmport.netlify.app/#inicio"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             Access portfolio
                         </a>
-                        <a href="https://github.com/gustavoallm/portfoliosimples" target="_blank">
+                        <a
+                            href="https://github.com/gustavoallm/portfoliosimples"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             Repository on GitHub
                         </a>
                     </div>
@@ -59,11 +67,17 @@ function Projects() {
             </div>
             <span>
                 Photo by{' '}
-                <a href="https://unsplash.com/@rhamely?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                <a
+                    href="https://unsplash.com/@rhamely?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    rel="noreferrer"
+                >
                     Rhamely
                 </a>{' '}
                 on{' '}
-                <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                <a
+                    href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    rel="noreferrer"
+                >
                     Unsplash
                 </a>
             </span>

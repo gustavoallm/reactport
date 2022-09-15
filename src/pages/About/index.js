@@ -28,34 +28,50 @@ function About() {
                     <h2>Skills</h2>
                     <br />
                     <div className="social-about">
-                        <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">
+                        <a
+                            href="https://www.w3schools.com/html/html_intro.asp"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <AiFillHtml5 color="#A5C9CA" size={40} />
                         </a>
-                        <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">
+                        <a
+                            href="https://www.w3schools.com/css/css_intro.asp"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <DiCss3 color="#A5C9CA" size={40} />
                         </a>
-                        <a href="https://www.javascript.com/" target="_blank">
+                        <a href="https://www.javascript.com/" target="_blank" rel="noreferrer">
                             <IoLogoJavascript color="#A5C9CA" size={40} />
                         </a>
-                        <a href="https://reactjs.org/" target="_blank">
+                        <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
                             <DiReact color="#A5C9CA" size={40} />
                         </a>
-                        <a href="https://git-scm.com/" target="_blank">
+                        <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
                             <DiGit color="#A5C9CA" size={40} />
                         </a>
-                        <a href="https://github.com/gustavoallm" target="_blank">
+                        <a href="https://github.com/gustavoallm" target="_blank" rel="noreferrer">
                             <AiFillGithub color="#A5C9CA" size={40} />
                         </a>
-                        <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-2019" target="_blank">
+                        <a
+                            href="https://www.microsoft.com/pt-br/sql-server/sql-server-2019"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <DiMsqlServer color="#A5C9CA" size={40} />
                         </a>
-                        <a href="https://www.mysql.com/" target="_blank">
+                        <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
                             <SiMysql color="#A5C9CA" size={40} />
                         </a>
-                        <a href="https://firebase.google.com/" target="_blank">
+                        <a href="https://firebase.google.com/" target="_blank" rel="noreferrer">
                             <DiFirebase color="#A5C9CA" size={40} />
                         </a>
-                        <a href="https://www.adobe.com/br/products/photoshop.html" target="_blank">
+                        <a
+                            href="https://www.adobe.com/br/products/photoshop.html"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <DiPhotoshop color="#A5C9CA" size={40} />
                         </a>
                     </div>
@@ -63,11 +79,17 @@ function About() {
             </div>
             <span>
                 Photo by{' '}
-                <a href="https://unsplash.com/@rhamely?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                <a
+                    href="https://unsplash.com/@rhamely?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    rel="noreferrer"
+                >
                     Rhamely
                 </a>{' '}
                 on{' '}
-                <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                <a
+                    href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    rel="noreferrer"
+                >
                     Unsplash
                 </a>
             </span>

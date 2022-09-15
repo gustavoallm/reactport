@@ -20,12 +20,13 @@ function Home() {
                         working as technical support
                     </p>
                     <div className="social">
-                        <a href="https://github.com/gustavoallm" target="_blank">
+                        <a href="https://github.com/gustavoallm" target="_blank" rel="noreferrer">
                             <GoMarkGithub color="#A5C9CA" size={40} />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/gustavo-de-almeida-carvalho-266135151/"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <BsLinkedin color="#A5C9CA" size={40} />
                         </a>
@@ -34,11 +35,17 @@ function Home() {
             </div>
             <span>
                 Photo by{' '}
-                <a href="https://unsplash.com/@rhamely?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                <a
+                    href="https://unsplash.com/@rhamely?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    rel="noreferrer"
+                >
                     Rhamely
                 </a>{' '}
                 on{' '}
-                <a href="https://unsplash.com/@rhamely?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                <a
+                    href="https://unsplash.com/@rhamely?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    rel="noreferrer"
+                >
                     Unsplash
                 </a>
             </span>
