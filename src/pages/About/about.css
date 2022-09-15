@@ -1,0 +1,33 @@
+.about {
+    background: url('../../assets/greylake.jpg') no-repeat center center;
+    background-size: cover;
+}
+.social-about {
+    margin-top: 1em;
+}
+
+.social-about a {
+    padding: 8px 8px;
+}
+
+.content h2 {
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 1024px) {
+    br {
+        display: none;
+    }
+    .title,
+    .text {
+        margin-top: 30%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .text {
+        margin-top: 5%;
+    }
+    .social-about {
+        margin-bottom: 20%;
+    }
+}
