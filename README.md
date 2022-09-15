@@ -13,7 +13,7 @@ The following tools were used in building the project:
 
 ## 📁 Access to the project
 
-[See the project in action](https://gustavoallmport.netlify.app/).
+[See the project in action](https://gustavoallm.netlify.app/).
 
 In this repositoty you have access to all the necessary material.
 
