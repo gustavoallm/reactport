@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { AiFillHtml5, AiFillGithub } from 'react-icons/ai';
 import { DiCss3, DiReact, DiGit, DiMsqlServer, DiFirebase, DiPhotoshop } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
-import { SiMysql } from 'react-icons/si';
+import { SiMysql, SiBootstrap } from 'react-icons/si';
 
 function About() {
     return (
@@ -47,6 +47,13 @@ function About() {
                         </a>
                         <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
                             <DiReact color="#A5C9CA" size={40} />
+                        </a>
+                        <a
+                            href="https://getbootstrap.com/docs/5.2/getting-started/introduction/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <SiBootstrap color="#A5C9CA" size={40} />
                         </a>
                         <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
                             <DiGit color="#A5C9CA" size={40} />

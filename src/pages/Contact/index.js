@@ -11,7 +11,7 @@ function Contact() {
         >
             <div className="container-contact">
                 <div className="content-contact">
-                    <h1 className="title-home">Contact</h1>
+                    <h1 className="title-contact">Contact</h1>
                     <div className="contacts">
                         <a href="mailto:gustavo_allm@outlook.com">
                             <span>Gustavo_allm@outlook.com</span>
