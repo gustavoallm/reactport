@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+</p>
+
 ## Portfolio
 
 Portfolio was developed entirely by me, applying the knowledge acquired during my studies and researches.
@@ -9,7 +13,11 @@ The following tools were used in building the project:
 -   `HTML`
 -   `CSS`
 -   `JavaScript`
--   `ReactJS`
+-   [React](https://pt-br.reactjs.org/)
+-   [React router dom](https://github.com/remix-run/react-router/tree/main/packages/react-router-dom)
+-   [React-icons](https://react-icons.github.io/react-icons/)
+-   [Framer-motion](https://www.npmjs.com/package/framer-motion)
+-   [Unsplash images](https://unsplash.com/)
 
 ## 📁 Access to the project
 
@@ -19,6 +27,26 @@ In this repositoty you have access to all the necessary material.
 
 ## 🛠️ Open and run the project
 
-first you need an editor to work with code like [VSCode](https://code.visualstudio.com/).
+First you need to have installed on your machine the [Node.js](https://nodejs.org/en/), [Git](https://git-scm.com/) and have an editor to work with the code like [VSCode](https://code.visualstudio.com/).
 
-Working....
+### 🎲 Running the web application
+
+```bash
+# Clone this repository
+git clone https://github.com/gustavoallm/reactport.git
+
+# Access the project folder in terminal/cmd
+cd reactport
+
+# install the dependencies
+npm install
+
+# Run the application in development mode
+npm start
+
+# The application will open on the port:3000 - access http://localhost:3000
+```
+
+## 📑 License
+
+The use of files for purposes other than learning is **prohibited.**
