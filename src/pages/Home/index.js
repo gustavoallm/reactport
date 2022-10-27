@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 
 function Home() {
     const welcome = () =>
-        toast('Welcome!', {
+        toast('Welcome!!!', {
             position: 'top-right',
             autoClose: 5000,
             hideProgressBar: false,
