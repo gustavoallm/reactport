@@ -1,5 +1,5 @@
 a {
-    color: #a5c9ca;
+    color: #fdb827;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -16,10 +16,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 60px;
     padding: 0 2rem;
-    background-color: #2c3333;
+    background-color: transparent;
     min-width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    font-weight: 700;
 }
 
 nav {
@@ -61,17 +67,23 @@ nav {
         position: absolute;
         top: 0;
         right: 0.5rem;
-        height: 50vh;
+        height: 40vh;
         width: 20vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
-        background-color: #2c3333;
+        /* background-color: #121212; */
+        /* From https://css.glass */
+        /* From https://css.glass */
+        background: rgba(18, 18, 18, 0.36);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(11.4px);
+        -webkit-backdrop-filter: blur(11.4px);
         transition: 0.5s ease-in-out;
         transform: translateY(-100vh);
-        border-radius: 1em;
     }
 
     header .responsive_nav {
@@ -88,25 +100,29 @@ nav {
         font-size: 1.5rem;
     }
 
-    .home {
+    .glass {
+        background: rgba(18, 18, 18, 0.705);
+    }
+
+    .homebtn {
         margin-top: 3rem;
     }
 }
 
 @media only screen and (max-width: 767px) {
     header nav {
-        height: 40vh;
+        height: 50vh;
     }
 }
 
 @media only screen and (max-width: 480px) {
     header nav {
-        height: 30vh;
+        height: 40vh;
     }
 }
 
 @media only screen and (max-width: 380px) {
     header nav {
-        height: 40vh;
+        height: 50vh;
     }
 }

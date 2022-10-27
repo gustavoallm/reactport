@@ -1,63 +1,128 @@
-.container-project {
-    display: table;
-    max-width: 850px;
-    margin: auto;
-    height: 90vh;
-}
-
 .projects {
-    background: url('../../assets/greyocean.jpg') no-repeat center center;
-    background-size: cover;
+    background: #151515;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #212121, #151515, #0b0b0b);
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-content: center;
+    align-items: center;
 }
 
-.project {
-    text-align: center;
-    margin-top: 5%;
-}
-
-.sub-title {
+.subtitle {
     font-size: 40px;
+    color: #fdb827;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 500px;
+    height: 100vh;
+    text-align: center;
+    padding-top: 5%;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.box1 {
+    grid-area: 1 / 1 / 3 / 3;
+}
+.box2 {
+    grid-area: 1 / 3 / 3 / 5;
+}
+.box3 {
+    grid-area: 3 / 1 / 5 / 3;
+}
+.box4 {
+    grid-area: 3 / 3 / 5 / 5;
+}
+.box5 {
+    grid-area: 5 / 1 / 7 / 3;
+}
+.box6 {
+    grid-area: 5 / 3 / 7 / 5;
+}
+
+.center p {
+    min-height: 65px;
 }
 
 .thumb {
-    max-height: 350px;
-    width: 600px;
+    height: 250px;
+    width: 400px;
     margin-bottom: 15px;
-    border: 4px solid black;
+    border: 4px solid #fdb827;
     border-radius: 0.7em;
+    align-self: center;
+    object-fit: cover;
 }
 
-.project a {
-    padding: 12px;
-    margin: 0 20px;
+.access {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.center button {
+    padding: 0 10px;
+    height: 40px;
+    border: 2px solid #fdb827;
     border-radius: 4px;
-    color: #fff;
-    font-size: 20px;
-    background-color: #2c3333;
+    color: #fdb827;
+    font-size: 18px;
+    background-color: #121212;
     cursor: pointer;
     transition: all 0.5s;
     text-decoration: none;
 }
 
-span a {
-    color: #fff;
-    font-size: 18px;
-    text-decoration: underline;
+.scrolldown {
+    color: #fdb827;
+    animation: 2.35s linear 0s infinite normal none running animation;
+    position: absolute;
+    right: 0;
+    padding: 0px 20px;
+    margin-top: 85vh;
 }
 
-@media (max-width: 950px) {
+@keyframes animation {
+    50% {
+        transform: translateY(0.5rem);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
     .thumb {
+        height: auto;
         max-height: 200px;
         width: 300px;
+        object-fit: contain;
     }
-    .access {
-        display: flex;
-        margin: 0 5%;
+    .center button,
+    a {
+        height: auto;
+        padding: 10px 5px;
     }
-    .project p,
-    .project h2 {
-        margin-bottom: 0.5em;
-        margin-left: 5%;
-        margin-right: 5%;
+
+    .scrolldown {
+        display: none;
+    }
+
+    .center {
+        height: 500px;
+    }
+
+    .box1 {
+        margin-top: 20%;
     }
 }

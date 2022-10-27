@@ -1,21 +1,11 @@
-.bg-contact {
-    background: url('../../assets/ice.jpg') no-repeat center center;
+.contact {
+    background: url('../../assets/home.webp') no-repeat center center;
     background-size: cover;
-}
-
-.container-contact {
-    display: flex;
-    max-width: 850px;
-    margin-left: 20%;
     height: 100vh;
-    align-items: center;
 }
 
-.content-contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contact-section {
+    text-align: center;
 }
 
 .contacts {
@@ -23,18 +13,16 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    border-radius: 1em;
+    /* From https://css.glass */
+    background: rgba(0, 0, 4, 0.32);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.3px);
+    -webkit-backdrop-filter: blur(11.3px);
 }
 .contacts a {
     padding: 12px 20px;
-    color: #a5c9ca;
-}
-
-.title-contact {
-    font-size: 60px;
-    margin-bottom: 5%;
+    color: #fdb827;
 }
 
 @media only screen and (max-width: 1024px) {

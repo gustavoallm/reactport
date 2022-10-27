@@ -9,12 +9,14 @@ function Contact() {
             animate={{ width: '100%' }}
             exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
         >
-            <div className="container-contact">
-                <div className="content-contact">
-                    <h1 className="title-contact">Contact</h1>
-                    <div className="contacts">
+            <div className="container contact">
+                <div className="contact-section">
+                    <h1 className="title animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
+                        Contact
+                    </h1>
+                    <div className="contacts title animate__animated animate__lightSpeedInRight animate__delay-0.5s">
                         <a href="mailto:gustavo_allm@outlook.com">
-                            <span>Gustavo_allm@outlook.com</span>
+                            <span>gustavo_allm@outlook.com</span>
                         </a>
                         <a href="tel://+551999419-7044">
                             <span>+55 19 99419-7044</span>
@@ -25,22 +27,6 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <span>
-                Photo by{' '}
-                <a
-                    href="https://unsplash.com/@rodlong?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                    rel="noreferrer"
-                >
-                    Rod Long
-                </a>{' '}
-                on{' '}
-                <a
-                    href="https://unsplash.com/t/textures-patterns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                    rel="noreferrer"
-                >
-                    Unsplash
-                </a>
-            </span>
         </motion.main>
     );
 }

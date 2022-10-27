@@ -11,10 +11,12 @@ function Header() {
     };
 
     return (
-        <header>
-            <Link to="/">Gustavoallm</Link>
+        <header className="glass">
+            <Link className="logo" to="/">
+                GustavoAllm
+            </Link>
             <nav ref={navRef}>
-                <Link className="home" to="/">
+                <Link className="homebtn" to="/">
                     Home
                 </Link>
                 <Link to="/about">About</Link>

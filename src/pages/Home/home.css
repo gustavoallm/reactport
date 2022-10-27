@@ -1,28 +1,62 @@
 .container {
-    display: table;
-    max-width: 850px;
-    margin: auto;
+    background: url('../../assets/home.webp') no-repeat center center;
+    background-size: cover;
+    width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
+    max-width: 850px;
     text-align: center;
-    vertical-align: middle;
-    display: table-cell;
 }
 
 .title-home {
-    font-size: 60px;
-    margin-bottom: 5%;
+    font-size: 46px;
+    color: #fdb827;
+}
+
+.subtitle-home {
+    margin-bottom: 1.25rem;
+    color: rgba(189, 189, 189, 0.884);
 }
 
 .title {
-    font-size: 60px;
-    margin-bottom: 5%;
+    font-size: 46px;
+    margin-bottom: 0.95rem;
+    color: #fdb827;
 }
 
 p {
-    font-size: 24px;
+    font-size: 16px;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+}
+
+.homebox1 {
+    max-width: 450px;
+    margin-right: 10%;
+}
+.homebox2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.sethome {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.profile {
+    height: 220px;
+    width: 220px;
+    transition: ease-in;
 }
 
 .social {
@@ -33,19 +67,39 @@ p {
     padding: 12px 12px;
 }
 
-.background {
-    background: url('../../assets/mar.jpg') no-repeat center center;
-    background-size: cover;
-}
-
 @media only screen and (max-width: 1024px) {
     .content {
-        display: flex;
-        flex-direction: column;
+        padding: 0px 1rem;
     }
-    .title-home,
-    .text {
-        margin-top: 30%;
-        margin-bottom: 5%;
+    .home {
+        flex-direction: column;
+        padding: 0 3%;
+    }
+    .homebox1 {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+    .social {
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .home {
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .home {
+        height: auto;
+    }
+    .title-home {
+        margin-top: 25%;
+    }
+    .homebox2 {
+        margin-bottom: 10%;
     }
 }
