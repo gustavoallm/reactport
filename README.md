@@ -1,7 +1,3 @@
-<p align="center">
-<img src="https://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
-</p>
-
 ## Portfolio
 
 Portfolio was developed entirely by me, applying the knowledge acquired during my studies and researches.
