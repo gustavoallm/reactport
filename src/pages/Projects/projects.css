@@ -68,7 +68,7 @@
     flex-direction: row;
 }
 
-.center button {
+.projects-btn {
     padding: 0 10px;
     height: 40px;
     border: 2px solid #fdb827;

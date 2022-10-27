@@ -8,8 +8,21 @@ import request from '../../assets/request.webp';
 import validation from '../../assets/validation.webp';
 import { CgScrollV } from 'react-icons/cg';
 import { motion } from 'framer-motion';
+import { toast } from 'react-toastify';
 
 function Projects() {
+    const notify = () =>
+        toast('🚀 Working on it... 🚀', {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'dark',
+            animation: true,
+        });
     return (
         <motion.main
             initial={{ width: 0 }}
@@ -25,16 +38,18 @@ function Projects() {
                     <p>
                         Requests is a webapp where you can log support tickets from your customers and
                         register new customers too, the app has a verified login screen to access all
-                        functions.
+                        functions, data are saved on firebase.
                     </p>
                     <br />
                     <img className="thumb" src={request} alt="Site PrimeFlix" />
                     <div className="access">
-                        <a href="https://projeto-prime.netlify.app/" target="_blank" rel="noreferrer">
-                            <button>Access Requests</button>
+                        <a onClick={notify}>
+                            <button className="projects-btn">Access Requests</button>
                         </a>
-                        <a href="https://github.com/gustavoallm/primeflix" target="_blank" rel="noreferrer">
-                            <button>Repository on GitHub</button>
+                        <a>
+                            <button className="projects-btn" onClick={notify}>
+                                Repository on GitHub
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -45,16 +60,16 @@ function Projects() {
                     <br />
                     <p>
                         PrimeFlix is a website that lists movies that have been released recently, also gives
-                        you access to their details and a few more functions.
+                        you access to their details, a favorite page and a few more functions.
                     </p>
                     <br />
                     <img className="thumb" src={primeflix} alt="Site PrimeFlix" />
                     <div className="access">
                         <a href="https://projeto-prime.netlify.app/" target="_blank" rel="noreferrer">
-                            <button>Access PrimeFlix</button>
+                            <button className="projects-btn">Access PrimeFlix</button>
                         </a>
                         <a href="https://github.com/gustavoallm/primeflix" target="_blank" rel="noreferrer">
-                            <button>Repository on GitHub</button>
+                            <button className="projects-btn">Repository on GitHub</button>
                         </a>
                     </div>
                     <span className="scrolldown">
@@ -77,10 +92,10 @@ function Projects() {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <button>See it working</button>
+                            <button className="projects-btn">See it working</button>
                         </a>
                         <a href="https://github.com/gustavoallm/crudphp" target="_blank" rel="noreferrer">
-                            <button>Repository on GitHub</button>
+                            <button className="projects-btn">Repository on GitHub</button>
                         </a>
                     </div>
                 </div>
@@ -89,25 +104,25 @@ function Projects() {
                     <h2 className="subtitle mtop-title">CRUD in C#</h2>
                     <br />
                     <p>
-                        Just like this webapp, the portfolio was developed entirely by me, applying the
-                        knowledge acquired during my studies and researches.
+                        Is a windows form application that you can register new employees, edit their
+                        information and delete the registration, all synchronized with the SSMS database.
                     </p>
                     <br />
                     <img className="thumb" src={csharp} alt="Site PrimeFlix" />
                     <div className="access">
                         <a
-                            href="https://gustavoallmport.netlify.app/#inicio"
+                            href="https://www.linkedin.com/feed/update/urn:li:activity:6947887723525324800/"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <button>See it working</button>
+                            <button className="projects-btn">See it working</button>
                         </a>
                         <a
-                            href="https://github.com/gustavoallm/portfoliosimples"
+                            href="https://github.com/mfujita/SistemaOrdemServico"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <button>Repository on GitHub</button>
+                            <button className="projects-btn">Repository on GitHub</button>
                         </a>
                     </div>
                 </div>
@@ -117,25 +132,21 @@ function Projects() {
                     <br />
                     <p>
                         This app is a validation form made with regex rules in JS utilizing bootstrap for
-                        styling.
+                        styling, was developed to reinforce my studies.
                     </p>
                     <br />
 
                     <img className="thumb" src={validation} alt="Site PrimeFlix" />
                     <div className="access">
-                        <a
-                            href="https://gustavoallmport.netlify.app/#inicio"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <button>Access the project</button>
+                        <a>
+                            <button onClick={notify} className="projects-btn">
+                                Access the project
+                            </button>
                         </a>
-                        <a
-                            href="https://github.com/gustavoallm/portfoliosimples"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <button>Repository on GitHub</button>
+                        <a>
+                            <button onClick={notify} className="projects-btn">
+                                Repository on GitHub
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -144,8 +155,8 @@ function Projects() {
                     <h2 className="subtitle mtop-title">First portfolio in JS</h2>
                     <br />
                     <p>
-                        Just like this webapp, the portfolio was developed entirely by me, applying the
-                        knowledge acquired during my studies and researches.
+                        The page was developed by me, to test my knowledge right when I started studying to be
+                        a front end dev.
                     </p>
                     <br />
                     <img className="thumb" src={porthtml} alt="Site PrimeFlix" />
@@ -155,14 +166,14 @@ function Projects() {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <button>Access portfolio</button>
+                            <button className="projects-btn">Access portfolio</button>
                         </a>
                         <a
                             href="https://github.com/gustavoallm/portfoliosimples"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <button>Repository on GitHub</button>
+                            <button className="projects-btn">Repository on GitHub</button>
                         </a>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import './header.css';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
@@ -10,8 +10,19 @@ function Header() {
         navRef.current.classList.toggle('responsive_nav');
     };
 
+    const [color, setColor] = useState(false);
+    const changeColor = () => {
+        if (window.scrollY >= 60) {
+            setColor(true);
+        } else {
+            setColor(false);
+        }
+    };
+
+    window.addEventListener('scroll', changeColor);
+
     return (
-        <header className="glass">
+        <header className={color ? 'header header-bg' : 'header'}>
             <Link className="logo" to="/">
                 GustavoAllm
             </Link>

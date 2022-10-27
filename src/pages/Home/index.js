@@ -4,8 +4,24 @@ import profile from '../../assets/icon.webp';
 import { GoMarkGithub } from 'react-icons/go';
 import { BsLinkedin } from 'react-icons/bs';
 import { motion } from 'framer-motion';
+import { toast } from 'react-toastify';
 
 function Home() {
+    const welcome = () =>
+        toast('Welcome!', {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'dark',
+            animation: true,
+        });
+
+    window.onload = welcome;
+
     return (
         <motion.main
             initial={{ width: 0 }}
