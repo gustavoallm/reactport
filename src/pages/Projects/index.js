@@ -43,14 +43,12 @@ function Projects() {
                     <br />
                     <img className="thumb" src={request} alt="Site PrimeFlix" />
                     <div className="access">
-                        <a onClick={notify}>
-                            <button className="projects-btn">Access Requests</button>
-                        </a>
-                        <a>
-                            <button className="projects-btn" onClick={notify}>
-                                Repository on GitHub
-                            </button>
-                        </a>
+                        <button onClick={notify} className="projects-btn">
+                            Access Requests
+                        </button>
+                        <button className="projects-btn" onClick={notify}>
+                            Repository on GitHub
+                        </button>
                     </div>
                 </div>
                 <div className="box2 center">
@@ -138,16 +136,12 @@ function Projects() {
 
                     <img className="thumb" src={validation} alt="Site PrimeFlix" />
                     <div className="access">
-                        <a>
-                            <button onClick={notify} className="projects-btn">
-                                Access the project
-                            </button>
-                        </a>
-                        <a>
-                            <button onClick={notify} className="projects-btn">
-                                Repository on GitHub
-                            </button>
-                        </a>
+                        <button onClick={notify} className="projects-btn">
+                            Access the project
+                        </button>
+                        <button onClick={notify} className="projects-btn">
+                            Repository on GitHub
+                        </button>
                     </div>
                 </div>
 
