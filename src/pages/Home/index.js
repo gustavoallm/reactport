@@ -37,8 +37,8 @@ function Home() {
                         Fullstack Developer
                     </h3>
                     <p className="animate__animated animate__fadeInUp animate__delay-0.5s">
-                        I'm open for a jobs, currently I'm studying computer science (bachelor's degree,
-                        graduate in 2023) and working as technical support
+                        I'm searching job on development area, currently I'm studying computer science (bachelor's
+                        degree, graduation in 2023) and working as support analyst on Caterpillar.
                     </p>
                     <div className="social animate__animated animate__fadeInUp animate__delay-0.5s">
                         <a href="https://github.com/gustavoallm" target="_blank" rel="noreferrer">

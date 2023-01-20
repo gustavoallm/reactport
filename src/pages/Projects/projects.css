@@ -71,7 +71,7 @@
 .projects-btn {
     padding: 0 10px;
     height: 40px;
-    border: 2px solid #fdb827;
+    border: 2px outset #fdb827;
     border-radius: 4px;
     color: #fdb827;
     font-size: 18px;
