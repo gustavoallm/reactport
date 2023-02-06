@@ -7,13 +7,11 @@ function Contact() {
             className="bg-contact"
             initial={{ width: 0 }}
             animate={{ width: '100%' }}
-            exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+            exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
         >
             <div className="container contact">
                 <div className="contact-section">
-                    <h1 className="title animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
-                        Contact
-                    </h1>
+                    <h1 className="title animate__animated animate__lightSpeedInLeft animate__delay-0.5s">Contact</h1>
                     <div className="contacts title animate__animated animate__lightSpeedInRight animate__delay-0.5s">
                         <a href="mailto:gustavo_allm@outlook.com">
                             <span>gustavo_allm@outlook.com</span>

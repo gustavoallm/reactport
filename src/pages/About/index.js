@@ -11,7 +11,7 @@ function About() {
         <motion.main
             initial={{ width: 0 }}
             animate={{ width: '100%' }}
-            exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+            exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
         >
             <div className="container about">
                 <div className="content">
@@ -19,11 +19,10 @@ function About() {
                         About me...
                     </h1>
                     <p className="text animate__animated animate__fadeInLeftBig animate__delay-0.5s">
-                        My name is Gustavo de Almeida Carvalho, I like technology since I was a child and I
-                        started to be interested in programming in high school when I had my first contact
-                        programming in C++, I am currently in my penultimate year of the computer science
-                        college, I am studying technologies of web development and carrying out projects in
-                        React JS.
+                        My name is Gustavo de Almeida Carvalho, I like technology since I was a child and I started to
+                        be interested in programming in high school when I had my first contact programming in C++, I am
+                        currently in my last year of the computer science college, I am studying technologies of web
+                        development and carrying out projects in React JS.
                     </p>
                     <br />
                     <br />
@@ -33,18 +32,10 @@ function About() {
                     </span>
                     <br />
                     <div className="social-about animate__animated animate__fadeInUp animate__delay-0.5s">
-                        <a
-                            href="https://www.w3schools.com/html/html_intro.asp"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
+                        <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" rel="noreferrer">
                             <AiFillHtml5 color="#fdb827" size={40} />
                         </a>
-                        <a
-                            href="https://www.w3schools.com/css/css_intro.asp"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
+                        <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank" rel="noreferrer">
                             <DiCss3 color="#fdb827" size={40} />
                         </a>
                         <a href="https://www.javascript.com/" target="_blank" rel="noreferrer">
@@ -93,11 +84,7 @@ function About() {
                         <a href="https://firebase.google.com/" target="_blank" rel="noreferrer">
                             <DiFirebase color="#fdb827" size={40} />
                         </a>
-                        <a
-                            href="https://www.adobe.com/br/products/photoshop.html"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
+                        <a href="https://www.adobe.com/br/products/photoshop.html" target="_blank" rel="noreferrer">
                             <DiPhotoshop color="#fdb827" size={40} />
                         </a>
                     </div>

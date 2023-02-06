@@ -10,7 +10,7 @@ function Home() {
     const welcome = () =>
         toast('Welcome!', {
             position: 'top-right',
-            autoClose: 2000,
+            autoClose: 1200,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
@@ -26,7 +26,7 @@ function Home() {
         <motion.main
             initial={{ width: 0 }}
             animate={{ width: '100%' }}
-            exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+            exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
         >
             <div className="container home">
                 <div className="homebox1 sethome">
@@ -53,7 +53,7 @@ function Home() {
                         </a>
                     </div>
                 </div>
-                <div className="homebox2 sethome animate__animated animate__flipInX animate__delay-0.5s">
+                <div className="homebox2 sethome animate__animated animate__backInRight animate__delay-0.9s">
                     <img className="profile" src={profile} alt="Gustavo de A. Carvalho" />
                 </div>
             </div>

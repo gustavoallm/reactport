@@ -4,7 +4,7 @@ import { ToastContainer } from 'react-toastify';
 
 function App() {
     return (
-        <div className="App">
+        <div className="App" style={{ backgroundColor: '#444' }}>
             <ToastContainer
                 position="top-right"
                 autoClose={4000}

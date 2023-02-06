@@ -27,7 +27,7 @@ function Projects() {
         <motion.main
             initial={{ width: 0 }}
             animate={{ width: '100%' }}
-            exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+            exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
         >
             <div className="container projects">
                 <div className="box1 center">
@@ -36,12 +36,13 @@ function Projects() {
                     </h2>
                     <br />
                     <p>
-                        Requests is a webapp where you can log support tickets from your customers and
-                        register new customers too, the app has a verified login screen to access all
-                        functions, data are saved on firebase.
+                        Requests is a webapp where you can log support tickets from your customers and register new
+                        customers too, the app has a verified login screen to access all functions, data are saved on
+                        firebase.
                     </p>
                     <br />
                     <img className="thumb" src={request} alt="Site PrimeFlix" />
+
                     <div className="access">
                         <button onClick={notify} className="projects-btn">
                             Access Requests
@@ -57,8 +58,8 @@ function Projects() {
                     </h2>
                     <br />
                     <p>
-                        PrimeFlix is a website that lists movies that have been released recently, also gives
-                        you access to their details, a favorite page and a few more functions.
+                        PrimeFlix is a website that lists movies that have been released recently, also gives you access
+                        to their details, a favorite page and a few more functions.
                     </p>
                     <br />
                     <img className="thumb" src={primeflix} alt="Site PrimeFlix" />
@@ -79,8 +80,8 @@ function Projects() {
                     <h2 className="subtitle mtop-title">CRUD in PHP</h2>
                     <br />
                     <p>
-                        The table is filled with data from the database created in MySQL and it is possible to
-                        change the data through the modal that will open by clicking on the desired field.
+                        The table is filled with data from the database created in MySQL and it is possible to change
+                        the data through the modal that will open by clicking on the desired field.
                     </p>
                     <br />
                     <img className="thumb" src={php} alt="Site PrimeFlix" />
@@ -102,8 +103,8 @@ function Projects() {
                     <h2 className="subtitle mtop-title">CRUD in C#</h2>
                     <br />
                     <p>
-                        Is a windows form application that you can register new employees, edit their
-                        information and delete the registration, all synchronized with the SSMS database.
+                        Is a windows form application that you can register new employees, edit their information and
+                        delete the registration, all synchronized with the SSMS database.
                     </p>
                     <br />
                     <img className="thumb" src={csharp} alt="Site PrimeFlix" />
@@ -115,11 +116,7 @@ function Projects() {
                         >
                             <button className="projects-btn">See it working</button>
                         </a>
-                        <a
-                            href="https://github.com/mfujita/SistemaOrdemServico"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
+                        <a href="https://github.com/mfujita/SistemaOrdemServico" target="_blank" rel="noreferrer">
                             <button className="projects-btn">Repository on GitHub</button>
                         </a>
                     </div>
@@ -129,8 +126,8 @@ function Projects() {
                     <h2 className="subtitle mtop-title">Regex Validation</h2>
                     <br />
                     <p>
-                        This app is a validation form made with regex rules in JS utilizing bootstrap for
-                        styling, was developed to reinforce my studies.
+                        This app is a validation form made with regex rules in JS utilizing bootstrap for styling, was
+                        developed to reinforce my studies.
                     </p>
                     <br />
 
@@ -149,24 +146,16 @@ function Projects() {
                     <h2 className="subtitle mtop-title">First portfolio in JS</h2>
                     <br />
                     <p>
-                        The page was developed by me, to test my knowledge right when I started studying to be
-                        a front end dev.
+                        The page was developed by me, to test my knowledge right when I started studying to be a front
+                        end dev.
                     </p>
                     <br />
-                    <img className="thumb" src={porthtml} alt="Site PrimeFlix" />
+                    <img className="thumb" src={porthtml} alt="First Portfolio" />
                     <div className="access">
-                        <a
-                            href="https://gustavoallmport.netlify.app/#inicio"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
+                        <a href="https://gustavoallmport.netlify.app/#inicio" target="_blank" rel="noreferrer">
                             <button className="projects-btn">Access portfolio</button>
                         </a>
-                        <a
-                            href="https://github.com/gustavoallm/portfoliosimples"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
+                        <a href="https://github.com/gustavoallm/portfoliosimples" target="_blank" rel="noreferrer">
                             <button className="projects-btn">Repository on GitHub</button>
                         </a>
                     </div>
