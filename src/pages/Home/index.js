@@ -1,12 +1,11 @@
 import './home.css';
 import 'animate.css';
-import profile from '../../assets/icontest.png';
 import { GoMarkGithub } from 'react-icons/go';
 import { BsLinkedin } from 'react-icons/bs';
 import { toast } from 'react-toastify';
 
 import 'animate.css';
-import { AiFillHtml5, AiFillGithub, AiOutlineMail } from 'react-icons/ai';
+import { AiFillHtml5, AiFillGithub } from 'react-icons/ai';
 import { DiCss3, DiReact, DiGit, DiMsqlServer, DiFirebase, DiPhotoshop } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
 import { SiMysql, SiBootstrap, SiPhp, SiCsharp, SiDocker } from 'react-icons/si';
