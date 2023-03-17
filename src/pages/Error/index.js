@@ -10,8 +10,9 @@ function Error() {
             exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
             className="not-found"
         >
-            <h2>Page not found!</h2>
-            <Link to="/">Back to home page</Link>
+            <h1 className="title">ERROR 404</h1>
+            <h2>page not found!</h2>
+            <Link to="/">back to home page</Link>
         </motion.div>
     );
 }

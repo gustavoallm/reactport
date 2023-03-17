@@ -1,5 +1,5 @@
 a {
-    color: #fdb827;
+    color: #0f141e;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -57,7 +57,7 @@ nav {
 }
 
 .header-bg {
-    background-color: #121212;
+    background-color: rgba(18, 18, 18, 0.075);
 }
 
 @media only screen and (max-width: 1023px) {

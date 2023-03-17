@@ -30,9 +30,6 @@ function Header() {
                 <Link className="homebtn" to="/">
                     Home
                 </Link>
-                <Link to="/about">About</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes />
                 </button>

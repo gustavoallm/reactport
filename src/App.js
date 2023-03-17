@@ -4,10 +4,10 @@ import { ToastContainer } from 'react-toastify';
 
 function App() {
     return (
-        <div className="App" style={{ backgroundColor: '#444' }}>
+        <div className="App">
             <ToastContainer
                 position="top-right"
-                autoClose={4000}
+                autoClose={3000}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick
@@ -15,7 +15,7 @@ function App() {
                 pauseOnFocusLoss
                 draggable
                 pauseOnHover
-                theme="dark"
+                theme="light"
             />
             <RoutesApp />
         </div>

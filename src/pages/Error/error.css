@@ -5,22 +5,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #395b64;
+    background-color: #0f141e;
 }
 
-.not-found h2 {
-    color: #2c3333;
-    margin-left: 35%;
+.not-found h1,
+h2 {
+    color: #fff;
 }
 
 .not-found a {
     text-decoration: none;
-    background-color: #395b64;
+    background-color: #0f141e;
     color: #fff;
     padding: 10px 14px;
-    margin-top: 14px;
+    margin-top: 2.5em;
+    border: 1px solid #444;
     border-radius: 0.5em;
-    margin-left: 35%;
+}
+
+.not-found a:hover {
+    background-color: #444;
+    color: #0f141e;
 }
 
 @media only screen and (max-width: 1024px) {
