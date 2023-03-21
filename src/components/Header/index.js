@@ -1,7 +1,7 @@
 import './header.css';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes, FaArrowUp } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 function Header() {
     const navRef = useRef();
