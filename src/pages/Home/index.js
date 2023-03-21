@@ -3,6 +3,7 @@ import 'animate.css';
 import { GoMarkGithub } from 'react-icons/go';
 import { BsLinkedin } from 'react-icons/bs';
 import { toast } from 'react-toastify';
+import { useState } from 'react';
 
 import 'animate.css';
 import { AiFillHtml5, AiFillGithub } from 'react-icons/ai';
@@ -33,16 +34,27 @@ function Home() {
 
     window.onload = welcome;
 
+    const [fade, setFade] = useState(false);
+    const fadeHome = () => {
+        if (window.scrollY >= 50) {
+            setFade(true);
+        } else {
+            setFade(false);
+        }
+    };
+
+    window.addEventListener('scroll', fadeHome);
+
     return (
         <main>
-            <button class="btn-contact">
+            <a class="btn-contact" href="#contact">
                 <span class="circle" aria-hidden="true">
                     <span class="icon arrow"></span>
                 </span>
                 <span class="button-text">Contact me</span>
-            </button>
+            </a>
             <div className="container">
-                <section className="home animate__animated animate__fadeIn animate__delay-0.8s">
+                <section className={fade ? 'home home-fade' : 'home'} id="top">
                     <div className="resume">
                         <div className="row">
                             <div className="main">
@@ -57,8 +69,8 @@ function Home() {
                                 </h2>
                                 <p className="animate__animated animate__fadeInUp animate__delay-0.5s">
                                     I'm searching jobs on development area, currently I'm studying computer
-                                    science (bachelor's degree, graduation in 2023) and working as support
-                                    analyst on Caterpillar.
+                                    science (bachelor's degree, graduation in 2023) and studying DevOps tools,
+                                    docker and linux
                                 </p>
                                 <div className="social animate__animated animate__fadeInUp animate__delay-0.5s">
                                     <a href="https://github.com/gustavoallm" target="_blank" rel="noreferrer">
@@ -173,23 +185,56 @@ function Home() {
                     <h1 className="title">Projects</h1>
                     <div className="works-grid">
                         <div className="work1 gridspace">
+                            <a
+                                className="link"
+                                href="https://projeto-prime.netlify.app/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <span className="thumb-text">Requests dashboard - React</span>
+                            </a>
                             <img className="thumb" src={request} alt="Projeto chamados" />
                         </div>
-                        <div className="work2 gridspace">
+                        <a
+                            className="work2 gridspace"
+                            href="https://projeto-prime.netlify.app/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <img className="thumb" src={primeflix} alt="Site PrimeFlix" />
-                        </div>
-                        <div className="work3 gridspace">
+                        </a>
+                        <a
+                            className="work3 gridspace"
+                            href="https://www.linkedin.com/feed/update/urn:li:activity:6988553983535534081/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <img className="thumb" src={php} alt="Crud PHP" />
-                        </div>
-                        <div className="work4 gridspace">
+                        </a>
+                        <a
+                            className="work4 gridspace"
+                            href="https://projeto-prime.netlify.app/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <img className="thumb" src={csharp} alt="Crud CSharp" />
-                        </div>
-                        <div className="work5 gridspace">
+                        </a>
+                        <a
+                            className="work5 gridspace"
+                            href="https://www.linkedin.com/feed/update/urn:li:activity:6947887723525324800/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <img className="thumb" src={validation} alt="Regex" />
-                        </div>
-                        <div className="work6 gridspace">
+                        </a>
+                        <a
+                            className="work6 gridspace"
+                            href="https://projeto-prime.netlify.app/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <img className="thumb" src={porthtml} alt="First Portfolio" />
-                        </div>
+                        </a>
                     </div>
                     <br />
                     <br />

@@ -9,7 +9,7 @@
 /*                  Home                         */
 
 .home {
-    background: url('../../assets/icontest2.png') no-repeat center center;
+    background: url('../../assets/iconai.png') no-repeat center center;
     background-size: 550px 700px;
     background-position: bottom right;
     display: flex;
@@ -19,6 +19,11 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+.home-fade {
+    opacity: 0.6;
+    transition: opacity 0.6s linear;
 }
 
 .resume {
@@ -56,10 +61,10 @@
     left: 50vw;
 }
 
-button {
+.btn-contact {
     position: fixed;
-    width: 46px;
-    height: 46px;
+    width: 12rem;
+    height: auto;
     left: 63px;
     bottom: 40px;
     z-index: 20;
@@ -75,12 +80,7 @@ button {
     font-family: inherit;
 }
 
-button.btn-contact {
-    width: 12rem;
-    height: auto;
-}
-
-button.btn-contact .circle {
+.circle {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
     display: block;
@@ -91,7 +91,7 @@ button.btn-contact .circle {
     border-radius: 1.625rem;
 }
 
-button.btn-contact .circle .icon {
+.icon {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
@@ -100,7 +100,7 @@ button.btn-contact .circle .icon {
     background: #fff;
 }
 
-button.btn-contact .circle .icon.arrow {
+.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     left: 0.625rem;
     width: 1.125rem;
@@ -108,7 +108,7 @@ button.btn-contact .circle .icon.arrow {
     background: none;
 }
 
-button.btn-contact .circle .icon.arrow::before {
+.arrow::before {
     position: absolute;
     content: '';
     top: -0.29rem;
@@ -120,7 +120,7 @@ button.btn-contact .circle .icon.arrow::before {
     transform: rotate(45deg);
 }
 
-button.btn-contact .button-text {
+.button-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
@@ -136,16 +136,16 @@ button.btn-contact .button-text {
     text-transform: uppercase;
 }
 
-button:hover .circle {
+.btn-contact:hover .circle {
     width: 100%;
 }
 
-button:hover .circle .icon.arrow {
+.btn-contact:hover .arrow {
     background: #fff;
     transform: translate(1rem, 0);
 }
 
-button:hover .button-text {
+.btn-contact:hover .button-text {
     color: #fff;
 }
 
@@ -253,26 +253,49 @@ h2 {
 
 .gridspace {
     display: flex;
-    padding-top: 5%;
     margin: auto;
+    height: 700px;
+    width: 560px;
+    margin-top: 5%;
+    margin-bottom: 50px;
+    overflow: hidden;
+    border: 1px solid #444;
 }
 
 .thumb {
-    height: 600px;
-    width: 550px;
-    margin-bottom: 50px;
-    border: 1px solid #444;
     align-self: center;
     object-fit: cover;
     object-position: 0;
     cursor: pointer;
+    height: 100%;
 }
 
 .thumb:hover {
-    background-color: rgba(15, 20, 30, 0.9);
-    opacity: 0.6;
+    transform: scale(1.05);
     box-sizing: border-box;
-    transition: opacity 0.2s linear;
+    transition: transform 0.3s;
+}
+
+.link {
+    height: 700px;
+    width: 560px;
+    z-index: 10;
+    position: absolute;
+}
+
+.link:hover {
+    background-color: #282936;
+    box-sizing: border-box;
+    transition: ease-in 0.3s;
+}
+
+.thumb-text {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    z-index: 20;
+    color: #fff;
+    font-size: 2rem;
 }
 
 /*                Contact                         */
@@ -288,6 +311,7 @@ h2 {
 }
 
 /*                Scrollbar                       */
+
 /* width */
 ::-webkit-scrollbar {
     width: 0.5rem;
@@ -325,6 +349,19 @@ h2 {
     }
     .main {
         width: auto;
+    }
+    .btn-contact {
+        left: 20px;
+        bottom: 30px;
+    }
+    .works-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .gridspace,
+    .link {
+        height: 600px;
+        width: 400px;
     }
 }
 

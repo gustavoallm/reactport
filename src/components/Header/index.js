@@ -1,7 +1,7 @@
 import './header.css';
 import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaArrowUp } from 'react-icons/fa';
 
 function Header() {
     const navRef = useRef();
@@ -10,26 +10,15 @@ function Header() {
         navRef.current.classList.toggle('responsive_nav');
     };
 
-    const [color, setColor] = useState(false);
-    const changeColor = () => {
-        if (window.scrollY >= 60) {
-            setColor(true);
-        } else {
-            setColor(false);
-        }
-    };
-
-    window.addEventListener('scroll', changeColor);
-
     return (
-        <header className={color ? 'header header-bg' : 'header'}>
+        <header className="header">
             <Link className="logo" to="/">
                 GustavoAllm
             </Link>
             <nav ref={navRef}>
-                <Link className="homebtn" to="/">
+                <a className="homebtn" href="#top">
                     Home
-                </Link>
+                </a>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes />
                 </button>
