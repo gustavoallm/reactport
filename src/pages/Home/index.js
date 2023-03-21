@@ -10,13 +10,12 @@ import { AiFillHtml5, AiFillGithub } from 'react-icons/ai';
 import { DiCss3, DiReact, DiGit, DiMsqlServer, DiFirebase, DiPhotoshop } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
 import { SiMysql, SiBootstrap, SiPhp, SiCsharp, SiDocker } from 'react-icons/si';
-import { BsArrowDownCircle } from 'react-icons/bs';
 
-import primeflix from '../../assets/primeflix.webp';
+import primeflix from '../../assets/primeflix.png';
 import porthtml from '../../assets/porthtml.webp';
 import php from '../../assets/php.webp';
 import csharp from '../../assets/csharp.webp';
-import request from '../../assets/request.webp';
+import request from '../../assets/request.png';
 import validation from '../../assets/validation.webp';
 
 function Home() {
@@ -86,12 +85,16 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <span className="scrolldown">
-                            <BsArrowDownCircle color="#0f141e" size={30} />
-                        </span>
+                        <a class="mouse_scroll" href="#about">
+                            <div>
+                                <span class="m_scroll_arrows unu"></span>
+                                <span class="m_scroll_arrows doi"></span>
+                                <span class="m_scroll_arrows trei"></span>
+                            </div>
+                        </a>
                     </div>
                 </section>
-                <section className="about">
+                <section className="about" id="about">
                     <div className="content">
                         <h1 className="title mtop-title">About me...</h1>
                         <p className="text">
@@ -195,14 +198,17 @@ function Home() {
                             </a>
                             <img className="thumb" src={request} alt="Projeto chamados" />
                         </div>
-                        <a
-                            className="work2 gridspace"
-                            href="https://projeto-prime.netlify.app/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
+                        <div className="work2 gridspace">
+                            <a
+                                className="link"
+                                href="https://projeto-prime.netlify.app/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <span className="thumb-text">Primeflix - React</span>
+                            </a>
                             <img className="thumb" src={primeflix} alt="Site PrimeFlix" />
-                        </a>
+                        </div>
                         <a
                             className="work3 gridspace"
                             href="https://www.linkedin.com/feed/update/urn:li:activity:6988553983535534081/"

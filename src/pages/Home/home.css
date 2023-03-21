@@ -270,12 +270,6 @@ h2 {
     height: 100%;
 }
 
-.thumb:hover {
-    transform: scale(1.05);
-    box-sizing: border-box;
-    transition: transform 0.3s;
-}
-
 .link {
     height: 700px;
     width: 560px;
@@ -296,11 +290,18 @@ h2 {
     z-index: 20;
     color: #fff;
     font-size: 2rem;
+    font-weight: 500;
 }
 
 /*                Contact                         */
 .contact {
     height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10em;
 }
 
 .contacts a {
@@ -308,6 +309,112 @@ h2 {
     flex-direction: column;
     align-items: center;
     margin: 10px 0;
+}
+
+/*                ScrollDown                      */
+.mouse_scroll {
+    position: absolute;
+    margin: 0 auto;
+    z-index: 10;
+    bottom: 2.5em;
+    left: 50vw;
+}
+
+.m_scroll_arrows {
+    display: block;
+    width: 5px;
+    height: 5px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    border-right: 2px solid #0f141e;
+    border-bottom: 2px solid #0f141e;
+    margin: 0 0 3px 4px;
+    width: 16px;
+    height: 16px;
+}
+
+.unu,
+.doi,
+.trei {
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+}
+
+.unu {
+    margin-top: 1px;
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    animation-delay: alternate;
+}
+
+.doi {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -webkit-animation-direction: alternate;
+    animation-delay: 0.2s;
+    animation-direction: alternate;
+    margin-top: -6px;
+}
+
+.trei {
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -webkit-animation-direction: alternate;
+    animation-delay: 0.3s;
+    animation-direction: alternate;
+    margin-top: -6px;
+}
+
+@-webkit-keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /*                Scrollbar                       */
@@ -354,6 +461,9 @@ h2 {
         left: 20px;
         bottom: 30px;
     }
+    section:not(.home, .contact) {
+        margin-top: 10em;
+    }
     .works-grid {
         display: flex;
         flex-direction: column;
@@ -361,7 +471,31 @@ h2 {
     .gridspace,
     .link {
         height: 600px;
-        width: 400px;
+        width: 350px;
+    }
+    .thumb-text {
+        max-width: 280px;
+        top: 50px;
+        left: 20px;
+        text-align: left;
+    }
+    p {
+        font-size: 18px;
+    }
+    .title {
+        font-size: 60px;
+    }
+    .mouse_scroll {
+        bottom: 1.5em;
+        left: 80vw;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .gridspace,
+    .link {
+        height: 600px;
+        width: 330px;
     }
 }
 
