@@ -1,34 +1,34 @@
-import './home.css';
-import 'animate.css';
-import { GoMarkGithub } from 'react-icons/go';
-import { BsLinkedin } from 'react-icons/bs';
-import { toast } from 'react-toastify';
-import { useState } from 'react';
+import "./home.css";
+import "animate.css";
+import { GoMarkGithub } from "react-icons/go";
+import { BsLinkedin } from "react-icons/bs";
+import { toast } from "react-toastify";
+import { useState } from "react";
 
-import 'animate.css';
-import { AiFillHtml5, AiFillGithub } from 'react-icons/ai';
-import { DiCss3, DiReact, DiGit, DiMsqlServer, DiFirebase, DiPhotoshop } from 'react-icons/di';
-import { IoLogoJavascript } from 'react-icons/io';
-import { SiMysql, SiBootstrap, SiPhp, SiCsharp, SiDocker } from 'react-icons/si';
+import "animate.css";
+import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
+import { DiCss3, DiReact, DiGit, DiMsqlServer, DiFirebase, DiPhotoshop } from "react-icons/di";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiMysql, SiBootstrap, SiPhp, SiCsharp, SiDocker } from "react-icons/si";
 
-import primeflix from '../../assets/primeflix.png';
-import porthtml from '../../assets/porthtml.webp';
-import php from '../../assets/php.webp';
-import csharp from '../../assets/csharp.webp';
-import request from '../../assets/request.png';
-import validation from '../../assets/validation.webp';
+import primeflix from "../../assets/primeflix.png";
+import porthtml from "../../assets/porthtml.webp";
+import php from "../../assets/php.png";
+import csharp from "../../assets/csharp.png";
+import request from "../../assets/request.png";
+import validation from "../../assets/validation.webp";
 
 function Home() {
     const welcome = () =>
-        toast('in development!', {
-            position: 'top-right',
+        toast("in development!", {
+            position: "top-right",
             autoClose: 3000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            theme: 'light',
+            theme: "light",
         });
 
     window.onload = welcome;
@@ -42,7 +42,7 @@ function Home() {
         }
     };
 
-    window.addEventListener('scroll', fadeHome);
+    window.addEventListener("scroll", fadeHome);
 
     return (
         <main>
@@ -53,7 +53,7 @@ function Home() {
                 <span class="button-text">Contact me</span>
             </a>
             <div className="container">
-                <section className={fade ? 'home home-fade' : 'home'} id="top">
+                <section className={fade ? "home home-fade" : "home"} id="top">
                     <div className="resume">
                         <div className="row">
                             <div className="main">
@@ -67,12 +67,16 @@ function Home() {
                                     Fullstack Developer
                                 </h2>
                                 <p className="animate__animated animate__fadeInUp animate__delay-0.5s">
-                                    I'm searching jobs on development area, currently I'm studying computer
-                                    science (bachelor's degree, graduation in 2023) and studying DevOps tools,
-                                    docker and linux
+                                    I'm searching jobs on development area, currently I'm studying
+                                    computer science (bachelor's degree, graduation in 2023) and
+                                    studying DevOps tools, docker and linux
                                 </p>
                                 <div className="social animate__animated animate__fadeInUp animate__delay-0.5s">
-                                    <a href="https://github.com/gustavoallm" target="_blank" rel="noreferrer">
+                                    <a
+                                        href="https://github.com/gustavoallm"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
                                         <GoMarkGithub color="#0f141e" size={40} />
                                     </a>
                                     <a
@@ -98,12 +102,12 @@ function Home() {
                     <div className="content">
                         <h1 className="title mtop-title">About me...</h1>
                         <p className="text">
-                            My name is Gustavo de Almeida Carvalho, I like technology since I was a child and
-                            I started to be interested in programming in high school when I had my first
-                            contact programming in C++, I am on my last year of the computer science college,
-                            I am studying studying DevOps tools, docker and linux. I started my studies in the
-                            coding area on beginning of 2022 and now I'm sure I can do a great work with my
-                            experience and knowledge.
+                            My name is Gustavo de Almeida Carvalho, I like technology since I was a
+                            child and I started to be interested in programming in high school when
+                            I had my first contact programming in C++, I am on my last year of the
+                            computer science college, I am studying studying DevOps tools, docker
+                            and linux. I started my studies in the coding area on beginning of 2022
+                            and now I'm sure I can do a great work with my experience and knowledge.
                         </p>
                         <br />
                         <h2>Skills</h2>
@@ -128,7 +132,11 @@ function Home() {
                             <a href="https://www.javascript.com/" target="_blank" rel="noreferrer">
                                 <IoLogoJavascript color="#0f141e" size={40} />
                             </a>
-                            <a href="https://projeto-prime.netlify.app/" target="_blank" rel="noreferrer">
+                            <a
+                                href="https://projeto-prime.netlify.app/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <DiReact color="#0f141e" size={40} />
                             </a>
                             <a
@@ -141,7 +149,11 @@ function Home() {
                             <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
                                 <DiGit color="#0f141e" size={40} />
                             </a>
-                            <a href="https://github.com/gustavoallm" target="_blank" rel="noreferrer">
+                            <a
+                                href="https://github.com/gustavoallm"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <AiFillGithub color="#0f141e" size={40} />
                             </a>
                             <a
@@ -165,7 +177,11 @@ function Home() {
                             >
                                 <DiMsqlServer color="#0f141e" size={40} />
                             </a>
-                            <a href="https://github.com/gustavoallm/crudphp" target="_blank" rel="noreferrer">
+                            <a
+                                href="https://github.com/gustavoallm/crudphp"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <SiMysql color="#0f141e" size={40} />
                             </a>
                             <a href="https://firebase.google.com/" target="_blank" rel="noreferrer">
@@ -255,7 +271,11 @@ function Home() {
                         <a href="tel://+551999419-7044">
                             <span>+55 19 99419-7044</span>
                         </a>
-                        <a href="https://goo.gl/maps/9n1gnKtCyUpi26Sy6" target="_blank" rel="noreferrer">
+                        <a
+                            href="https://goo.gl/maps/9n1gnKtCyUpi26Sy6"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <span>Americana SP, Brasil</span>
                         </a>
                     </div>
