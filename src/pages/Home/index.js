@@ -12,7 +12,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { SiMysql, SiBootstrap, SiPhp, SiCsharp, SiDocker } from "react-icons/si";
 
 import primeflix from "../../assets/primeflix.png";
-import porthtml from "../../assets/porthtml.webp";
+import firstport from "../../assets/firstport.png";
 import php from "../../assets/php.png";
 import csharp from "../../assets/csharp.png";
 import request from "../../assets/request.png";
@@ -243,19 +243,19 @@ function Home() {
                         </a>
                         <a
                             className="work5 gridspace"
+                            href="https://projeto-prime.netlify.app/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <img className="thumb" src={firstport} alt="First Portfolio" />
+                        </a>
+                        <a
+                            className="work6 gridspace"
                             href="https://www.linkedin.com/feed/update/urn:li:activity:6947887723525324800/"
                             target="_blank"
                             rel="noreferrer"
                         >
                             <img className="thumb" src={validation} alt="Regex" />
-                        </a>
-                        <a
-                            className="work6 gridspace"
-                            href="https://projeto-prime.netlify.app/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <img className="thumb" src={porthtml} alt="First Portfolio" />
                         </a>
                     </div>
                     <br />
