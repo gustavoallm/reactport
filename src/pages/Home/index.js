@@ -16,7 +16,7 @@ import firstport from "../../assets/firstport.png";
 import php from "../../assets/php.png";
 import csharp from "../../assets/csharp.png";
 import request from "../../assets/request.png";
-import validation from "../../assets/validation.webp";
+import validation from "../../assets/validation.png";
 
 function Home() {
     const welcome = () =>
@@ -206,7 +206,7 @@ function Home() {
                         <div className="work1 gridspace">
                             <a
                                 className="link"
-                                href="https://projeto-prime.netlify.app/"
+                                href="https://github.com/gustavoallm/requests"
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -235,7 +235,7 @@ function Home() {
                         </a>
                         <a
                             className="work4 gridspace"
-                            href="https://projeto-prime.netlify.app/"
+                            href="https://www.linkedin.com/feed/update/urn:li:activity:6947887723525324800/"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -243,7 +243,7 @@ function Home() {
                         </a>
                         <a
                             className="work5 gridspace"
-                            href="https://projeto-prime.netlify.app/"
+                            href="https://gustavoallmport.netlify.app/"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -251,7 +251,7 @@ function Home() {
                         </a>
                         <a
                             className="work6 gridspace"
-                            href="https://www.linkedin.com/feed/update/urn:li:activity:6947887723525324800/"
+                            href="https://github.com/gustavoallm/regexjs"
                             target="_blank"
                             rel="noreferrer"
                         >
