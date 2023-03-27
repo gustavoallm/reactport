@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import { useState } from "react";
 
 import "animate.css";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
 import { DiCss3, DiReact, DiGit, DiMsqlServer, DiFirebase, DiPhotoshop } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
@@ -20,9 +21,9 @@ import validation from "../../assets/validation.png";
 
 function Home() {
     const welcome = () =>
-        toast("in development!", {
+        toast("Welcome!", {
             position: "top-right",
-            autoClose: 3000,
+            autoClose: 2000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
@@ -51,6 +52,9 @@ function Home() {
                     <span class="icon arrow"></span>
                 </span>
                 <span class="button-text">Contact me</span>
+            </a>
+            <a class="btn-back" href="#top">
+                <BsFillArrowUpCircleFill color="#6e7e85" size={40} />
             </a>
             <div className="container">
                 <section className={fade ? "home home-fade" : "home"} id="top">
@@ -115,7 +119,7 @@ function Home() {
                         <br />
                         <div className="skills-svg">
                             <a
-                                href="https://www.w3schools.com/html/html_intro.asp"
+                                href="https://github.com/gustavoallm/regexjs"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="zoom"
@@ -184,23 +188,23 @@ function Home() {
                             >
                                 <SiMysql color="#0f141e" size={40} />
                             </a>
-                            <a href="https://firebase.google.com/" target="_blank" rel="noreferrer">
+                            <a
+                                href="https://github.com/gustavoallm/requests"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <DiFirebase color="#0f141e" size={40} />
                             </a>
                             <a href="https://www.linuxtips.io/" target="_blank" rel="noreferrer">
                                 <SiDocker color="#0f141e" size={40} />
                             </a>
-                            <a
-                                href="https://www.adobe.com/br/products/photoshop.html"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
+                            <a href="#projects">
                                 <DiPhotoshop color="#0f141e" size={40} />
                             </a>
                         </div>
                     </div>
                 </section>
-                <section className="projects">
+                <section className="projects" id="projects">
                     <h1 className="title">Projects</h1>
                     <div className="works-grid">
                         <div className="work1 gridspace">
@@ -210,7 +214,7 @@ function Home() {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span className="thumb-text">Requests dashboard - React</span>
+                                <span className="thumb-text">Requests Dashboard - React</span>
                             </a>
                             <img className="thumb" src={request} alt="Projeto chamados" />
                         </div>
@@ -225,42 +229,51 @@ function Home() {
                             </a>
                             <img className="thumb" src={primeflix} alt="Site PrimeFlix" />
                         </div>
-                        <a
-                            className="work3 gridspace"
-                            href="https://www.linkedin.com/feed/update/urn:li:activity:6988553983535534081/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
+                        <div className="work3 gridspace">
+                            <a
+                                className="link"
+                                href="https://www.linkedin.com/feed/update/urn:li:activity:6988553983535534081/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <span className="thumb-text">CRUD Dashboard - PHP</span>
+                            </a>
                             <img className="thumb" src={php} alt="Crud PHP" />
-                        </a>
-                        <a
-                            className="work4 gridspace"
-                            href="https://www.linkedin.com/feed/update/urn:li:activity:6947887723525324800/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
+                        </div>
+                        <div className="work4 gridspace">
+                            <a
+                                className="link"
+                                href="https://www.linkedin.com/feed/update/urn:li:activity:6947887723525324800/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <span className="thumb-text">CRUD Windows Forms - C#</span>
+                            </a>
                             <img className="thumb" src={csharp} alt="Crud CSharp" />
-                        </a>
-                        <a
-                            className="work5 gridspace"
-                            href="https://gustavoallmport.netlify.app/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
+                        </div>
+                        <div className="work5 gridspace">
+                            <a
+                                className="link"
+                                href="https://gustavoallmport.netlify.app/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <span className="thumb-text">Portfolio Example - React</span>
+                            </a>
                             <img className="thumb" src={firstport} alt="First Portfolio" />
-                        </a>
-                        <a
-                            className="work6 gridspace"
-                            href="https://github.com/gustavoallm/regexjs"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
+                        </div>
+                        <div className="work6 gridspace">
+                            <a
+                                className="link"
+                                href="https://github.com/gustavoallm/regexjs"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <span className="thumb-text">Regex Verification - JS</span>
+                            </a>
                             <img className="thumb" src={validation} alt="Regex" />
-                        </a>
+                        </div>
                     </div>
-                    <br />
-                    <br />
-                    <br />
                 </section>
                 <section className="contact">
                     <h1 className="title">Contact</h1>

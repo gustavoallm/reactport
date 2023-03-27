@@ -9,7 +9,7 @@
 /*                  Home                         */
 
 .home {
-    background: url('../../assets/iconai.png') no-repeat center center;
+    background: url("../../assets/iconai.png") no-repeat center center;
     background-size: 550px 700px;
     background-position: bottom right;
     display: flex;
@@ -110,7 +110,7 @@
 
 .arrow::before {
     position: absolute;
-    content: '';
+    content: "";
     top: -0.29rem;
     right: 0.0625rem;
     width: 0.625rem;
@@ -418,6 +418,14 @@ h2 {
 }
 
 /*                Scrollbar                       */
+
+.btn-back {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    z-index: 25;
+    cursor: pointer;
+}
 
 /* width */
 ::-webkit-scrollbar {
