@@ -421,10 +421,18 @@ h2 {
 
 .btn-back {
     position: fixed;
+    height: 48px;
     right: 20px;
     bottom: 40px;
-    z-index: 25;
+    z-index: 20;
+    display: inline-block;
     cursor: pointer;
+    border-radius: 30px;
+    background-color: #f1f1f1;
+}
+
+.btn-back path {
+    color: #282936;
 }
 
 /* width */
@@ -457,6 +465,31 @@ h2 {
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .home {
+        background-position: 500px 150px;
+    }
+    .gridspace,
+    .link {
+        height: 600px;
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home {
+        background-position: 300px 100px;
+    }
+    .resume {
+        margin-top: 0px;
+    }
+
+    .works-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media only screen and (max-width: 481px) {
     .home {
         height: 100vh;
@@ -471,6 +504,9 @@ h2 {
     }
     section:not(.home, .contact) {
         margin-top: 10em;
+    }
+    .text {
+        text-align: justify;
     }
     .works-grid {
         display: flex;
@@ -494,8 +530,10 @@ h2 {
         font-size: 60px;
     }
     .mouse_scroll {
-        bottom: 1.5em;
-        left: 80vw;
+        display: none;
+    }
+    .btn-back {
+        bottom: 30px;
     }
 }
 
@@ -510,5 +548,10 @@ h2 {
 @media only screen and (max-width: 321px) {
     .main {
         margin: auto 10px auto 5px;
+    }
+    .gridspace,
+    .link {
+        height: 600px;
+        width: 300px;
     }
 }

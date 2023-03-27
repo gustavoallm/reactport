@@ -54,7 +54,7 @@ function Home() {
                 <span class="button-text">Contact me</span>
             </a>
             <a class="btn-back" href="#top">
-                <BsFillArrowUpCircleFill color="#6e7e85" size={40} />
+                <BsFillArrowUpCircleFill color="#282936" size={48} />
             </a>
             <div className="container">
                 <section className={fade ? "home home-fade" : "home"} id="top">
