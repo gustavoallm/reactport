@@ -1,14 +1,14 @@
-import { BrowserRouter } from 'react-router-dom';
-import Header from './components/Header';
-import AnimatedRoutes from './components/AnimatedRoutes';
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function RoutesApp() {
-    return (
-        <BrowserRouter>
-            <Header />
-            <AnimatedRoutes />
-        </BrowserRouter>
-    );
+	return (
+		<BrowserRouter>
+			<Navbar />
+			<AnimatedRoutes />
+		</BrowserRouter>
+	);
 }
 
 export default RoutesApp;

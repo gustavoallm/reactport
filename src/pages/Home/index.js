@@ -54,7 +54,7 @@ function Home() {
 				<span class="button-text">Contact me</span>
 			</a>
 			<a class="btn-back" href="#top">
-				<BsFillArrowUpCircleFill color="#282936" size={48} />
+				<BsFillArrowUpCircleFill color="#0D2B35" size={48} />
 			</a>
 			<div className="container">
 				<section className={fade ? "home home-fade" : "home"} id="top">
@@ -71,24 +71,20 @@ function Home() {
 									Fullstack Developer
 								</h2>
 								<p className="animate__animated animate__fadeInUp animate__delay-0.5s">
-									I'm a freelance developer at my own company, currently I'm
-									studying computer science (bachelor's degree, graduation in
-									2023) and studying DevOps tools, docker and linux.
+									Hello! My name is Gustavo I live in Brazil and I'm a freelance developer, my
+									expertise is in React, JavaScript (ES6), HTML5, CSS3, TypeScript and NodeJS,
+									scroll down to see a little about me and my projects.
 								</p>
 								<div className="social animate__animated animate__fadeInUp animate__delay-0.5s">
-									<a
-										href="https://github.com/gustavoallm"
-										target="_blank"
-										rel="noreferrer"
-									>
-										<GoMarkGithub color="#0f141e" size={40} />
+									<a href="https://github.com/gustavoallm" target="_blank" rel="noreferrer">
+										<GoMarkGithub color="#0D2B35" size={40} />
 									</a>
 									<a
 										href="https://www.linkedin.com/in/gustavo-de-almeida-carvalho-266135151/"
 										target="_blank"
 										rel="noreferrer"
 									>
-										<BsLinkedin color="#0f141e" size={40} />
+										<BsLinkedin color="#0D2B35" size={40} />
 									</a>
 								</div>
 							</div>
@@ -106,12 +102,10 @@ function Home() {
 					<div className="content">
 						<h1 className="title mtop-title">About me...</h1>
 						<p className="text">
-							My name is Gustavo de Almeida Carvalho, I like technology since I was a
-							child and I started to be interested in programming in high school when
-							I had my first contact programming in C++, I am on my last year of the
-							computer science college. I started my studies in the coding area on
-							beginning of 2022 and now I'm sure I can do a great work with my
-							experience and knowledge.
+							I have been working as a freelance developer for the last 9 months and I want to apply
+							my knowledge of software development in challenging projects, my specialty is in
+							React, JavaScript (ES6), HTML5, CSS3, TypeScript and NodeJS, I plan to develop my
+							career under the supervision and encouragement of a committed company with innovation.
 						</p>
 						<br />
 						<h2>Skills</h2>
@@ -124,82 +118,66 @@ function Home() {
 								rel="noreferrer"
 								className="zoom"
 							>
-								<AiFillHtml5 color="#0f141e" size={40} />
+								<AiFillHtml5 color="#0D2B35" size={40} />
 							</a>
 							<a
 								href="https://www.w3schools.com/css/css_intro.asp"
 								target="_blank"
 								rel="noreferrer"
 							>
-								<DiCss3 color="#0f141e" size={40} />
+								<DiCss3 color="#0D2B35" size={40} />
 							</a>
 							<a href="https://www.javascript.com/" target="_blank" rel="noreferrer">
-								<IoLogoJavascript color="#0f141e" size={40} />
+								<IoLogoJavascript color="#0D2B35" size={40} />
 							</a>
-							<a
-								href="https://projeto-prime.netlify.app/"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<DiReact color="#0f141e" size={40} />
+							<a href="https://projeto-prime.netlify.app/" target="_blank" rel="noreferrer">
+								<DiReact color="#0D2B35" size={40} />
 							</a>
 							<a
 								href="https://www.linkedin.com/feed/update/urn:li:activity:6988553983535534081/"
 								target="_blank"
 								rel="noreferrer"
 							>
-								<SiBootstrap color="#0f141e" size={40} />
+								<SiBootstrap color="#0D2B35" size={40} />
 							</a>
 							<a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-								<DiGit color="#0f141e" size={40} />
+								<DiGit color="#0D2B35" size={40} />
 							</a>
-							<a
-								href="https://github.com/gustavoallm"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<AiFillGithub color="#0f141e" size={40} />
+							<a href="https://github.com/gustavoallm" target="_blank" rel="noreferrer">
+								<AiFillGithub color="#0D2B35" size={40} />
 							</a>
 							<a
 								href="https://www.linkedin.com/feed/update/urn:li:activity:6947887723525324800/"
 								target="_blank"
 								rel="noreferrer"
 							>
-								<SiCsharp color="#0f141e" size={40} />
+								<SiCsharp color="#0D2B35" size={40} />
 							</a>
 							<a
 								href="https://www.linkedin.com/feed/update/urn:li:activity:6988553983535534081/"
 								target="_blank"
 								rel="noreferrer"
 							>
-								<SiPhp color="#0f141e" size={40} />
+								<SiPhp color="#0D2B35" size={40} />
 							</a>
 							<a
 								href="https://www.linkedin.com/feed/update/urn:li:activity:6947887723525324800/"
 								target="_blank"
 								rel="noreferrer"
 							>
-								<DiMsqlServer color="#0f141e" size={40} />
+								<DiMsqlServer color="#0D2B35" size={40} />
 							</a>
-							<a
-								href="https://github.com/gustavoallm/crudphp"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<SiMysql color="#0f141e" size={40} />
+							<a href="https://github.com/gustavoallm/crudphp" target="_blank" rel="noreferrer">
+								<SiMysql color="#0D2B35" size={40} />
 							</a>
-							<a
-								href="https://github.com/gustavoallm/requests"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<DiFirebase color="#0f141e" size={40} />
+							<a href="https://github.com/gustavoallm/requests" target="_blank" rel="noreferrer">
+								<DiFirebase color="#0D2B35" size={40} />
 							</a>
 							<a href="https://www.linuxtips.io/" target="_blank" rel="noreferrer">
-								<SiDocker color="#0f141e" size={40} />
+								<SiDocker color="#0D2B35" size={40} />
 							</a>
 							<a href="#projects">
-								<DiPhotoshop color="#0f141e" size={40} />
+								<DiPhotoshop color="#0D2B35" size={40} />
 							</a>
 						</div>
 					</div>
@@ -284,11 +262,7 @@ function Home() {
 						<a href="tel://+551999419-7044">
 							<span>+55 19 99419-7044</span>
 						</a>
-						<a
-							href="https://goo.gl/maps/9n1gnKtCyUpi26Sy6"
-							target="_blank"
-							rel="noreferrer"
-						>
+						<a href="https://goo.gl/maps/9n1gnKtCyUpi26Sy6" target="_blank" rel="noreferrer">
 							<span>Americana SP, Brasil</span>
 						</a>
 					</div>
