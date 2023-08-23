@@ -1,12 +1,18 @@
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import AnimatedRoutes from "./components/AnimatedRoutes";
+import Home from "./pages/Home/index";
+import Projects from "./components/Projects/Projects";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 
 function RoutesApp() {
 	return (
 		<BrowserRouter>
 			<Navbar />
-			<AnimatedRoutes />
+			<Home />
+			<Projects />
+			<About />
+			<Contact />
 		</BrowserRouter>
 	);
 }
