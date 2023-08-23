@@ -28,7 +28,7 @@ function Navbar() {
 					</a>
 				</li>
 				<li>
-					<a className="navbtn" href="#top">
+					<a className="navbtn" href="#about">
 						About Me
 					</a>
 				</li>

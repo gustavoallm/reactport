@@ -41,7 +41,7 @@
 
 @media only screen and (max-width: 481px) {
 	.about {
-		height: 100vh;
+		height: 140vh;
 		margin-top: 20%;
 	}
 	.skills {

@@ -31,14 +31,18 @@ const About = () => {
 					<br />
 					<div className="skills-svg">
 						<a
-							href="https://github.com/gustavoallm/regexjs"
+							href="https://drive.google.com/file/d/1SBpB15STsPeuidiw7w1pkOkLz7pxvpeb/view"
 							target="_blank"
 							rel="noreferrer"
 							className="zoom"
 						>
 							<AiFillHtml5 color="#0D2B35" size={40} />
 						</a>
-						<a href="https://www.w3schools.com/css/css_intro.asp" target="_blank" rel="noreferrer">
+						<a
+							href="https://drive.google.com/file/d/19EmR73JQZfjXtgArykX96uBc2b-hGcXv/view"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<DiCss3 color="#0D2B35" size={40} />
 						</a>
 						<a href="https://www.javascript.com/" target="_blank" rel="noreferrer">

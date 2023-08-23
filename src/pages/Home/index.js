@@ -24,7 +24,7 @@ function Home() {
 
 	const [fade, setFade] = useState(false);
 	const fadeHome = () => {
-		if (window.scrollY >= 60) {
+		if (window.scrollY > 100) {
 			setFade(true);
 		} else {
 			setFade(false);
@@ -34,7 +34,7 @@ function Home() {
 	window.addEventListener("scroll", fadeHome);
 
 	return (
-		<main>
+		<main id="top">
 			<a class="btn-contact" href="#contact">
 				<span class="circle" aria-hidden="true">
 					<span class="icon arrow"></span>
@@ -45,7 +45,7 @@ function Home() {
 				<BsFillArrowUpCircleFill color="#0D2B35" size={48} />
 			</a>
 			<div className="container">
-				<section className={fade ? "home home-fade" : "home"} id="top">
+				<section className={fade ? "home home-fade" : "home"}>
 					<div className="resume">
 						<div className="row">
 							<div className="main">
@@ -77,7 +77,7 @@ function Home() {
 								</div>
 							</div>
 						</div>
-						<a class="mouse_scroll" href="#about">
+						<a class="mouse_scroll" href="#products">
 							<div>
 								<span class="m_scroll_arrows unu"></span>
 								<span class="m_scroll_arrows doi"></span>
