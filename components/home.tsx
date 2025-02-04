@@ -47,7 +47,7 @@ export function Home() {
           </Button>
         </div>
         <div className="flex justify-center space-x-4">
-          {["React", "Next.js", "TypeScript", "Tailwind CSS"].map((skill) => (
+          {["React", "Next.js", "TypeScript", "Tailwind"].map((skill) => (
             <motion.span
               key={skill}
               className="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full"
