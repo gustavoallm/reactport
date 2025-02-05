@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { AnimatePresence, motion } from "framer-motion";
-import { Bolt, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -20,8 +20,12 @@ export function Navigation() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="#home" className="text-xl font-bold flex items-center hover:text-muted-foreground">
-          <Bolt className="mr-2 h-4 w-4" /> Gustavo Carvalho
+        <Link
+          href="#home"
+          className="text-xl font-bold flex items-center hover:text-muted-foreground space-x-2 transition-colors"
+        >
+          <img src="/favicon.ico" alt="logo" />
+          <span>Gustavo A. Carvalho</span>
         </Link>
         <div className="hidden md:flex space-x-4">
           {navItems.map((item) => (

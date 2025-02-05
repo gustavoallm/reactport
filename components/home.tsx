@@ -1,18 +1,37 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { particlesOptions } from "@/lib/particlesOptions";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 export function Home() {
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
+
+  const options = useMemo(() => particlesOptions, []);
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center">
+      {init && (
+        <Particles id="tsparticles" options={options} className="absolute inset-0 w-full h-full z-10" />
+      )}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-center"
+        className="text-center z-20"
       >
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Gustavo de Almeida Carvalho</h1>
         <h2 className="text-2xl md:text-3xl text-muted-foreground mb-4">

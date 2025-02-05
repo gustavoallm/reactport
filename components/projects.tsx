@@ -12,8 +12,8 @@ const projects = [
       "A full-featured e-commerce platform with product management, cart functionality, and secure checkout.",
     image: "/ecommerce.png",
     technologies: ["React", "Redux", "Sass", "Node", "Strapi", "Stripe"],
-    github: "https://github.com/username/e-commerce",
-    demo: "https://e-commerce-demo.com",
+    github: "",
+    demo: "https://www.linkedin.com/posts/gageldev_reactjs-vitejs-ecommerce-activity-7089321261910171648-R6GX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACSBMi4BVwODlNdmH49pL3B9CCKWPnq348s",
   },
   {
     title: "CRM Dashboard",
@@ -21,17 +21,17 @@ const projects = [
       "A comprehensive CRM dashboard for managing customer relationships, sales pipelines, and analytics.",
     image: "/crm.png",
     technologies: ["React", "TypeScript", "Tailwind", "Nest", "MongoDB"],
-    github: "https://github.com/username/crm-dashboard",
-    demo: "https://crm-dashboard-demo.com",
+    github: "",
+    demo: "https://stakem.netlify.app/",
   },
   {
-    title: "Industrial MES App",
+    title: "Industrial MES System",
     description:
       "A industrial monitoring application with real-time machine updates, storage module, reporting features.",
     image: "/industrial.png",
-    technologies: ["Javascript", "Jquery", "Bootstrap", "Wegnology"],
-    github: "https://github.com/username/task-manager",
-    demo: "https://task-manager-demo.com",
+    technologies: ["Javascript", "Jquery", "Bootstrap", "WEGnology"],
+    github: "",
+    demo: "https://www.loom.com/share/e09ba51f54e0413498d075154bd8bd2d?sid=014fcf6a-05dc-4d23-adcb-c41c00444c1b",
   },
 ];
 
@@ -67,13 +67,30 @@ export function Projects() {
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between">
-                <Button asChild variant="outline" size="sm">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" /> GitHub
-                  </a>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="sm"
+                  disabled={!project.github}
+                  className={!project.github ? "opacity-50 cursor-not-allowed" : ""}
+                >
+                  {project.github ? (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" /> GitHub
+                    </a>
+                  ) : (
+                    <span className="flex items-center">
+                      <Github className="mr-2 h-4 w-4" /> Private
+                    </span>
+                  )}
                 </Button>
-                <Button asChild size="sm">
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                <Button
+                  asChild
+                  size="sm"
+                  disabled={!project.demo}
+                  className={!project.demo ? "opacity-50 cursor-not-allowed" : ""}
+                >
+                  <a href={project.demo || "#"} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="mr-2 h-4 w-4" /> Demo
                   </a>
                 </Button>
