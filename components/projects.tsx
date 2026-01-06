@@ -1,20 +1,9 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
-  {
-    title: "E-commerce Platform",
-    description:
-      "A full-featured e-commerce platform with product management, cart functionality, and secure checkout.",
-    image: "/ecommerce.png",
-    technologies: ["React", "Redux", "Sass", "Node", "Strapi", "Stripe"],
-    github: "",
-    demo: "https://www.linkedin.com/posts/gageldev_reactjs-vitejs-ecommerce-activity-7089321261910171648-R6GX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACSBMi4BVwODlNdmH49pL3B9CCKWPnq348s",
-  },
   {
     title: "CRM Dashboard",
     description:
@@ -32,6 +21,15 @@ const projects = [
     technologies: ["Javascript", "Jquery", "Bootstrap", "WEGnology"],
     github: "",
     demo: "https://www.loom.com/share/e09ba51f54e0413498d075154bd8bd2d?sid=014fcf6a-05dc-4d23-adcb-c41c00444c1b",
+  },
+  {
+    title: "E-commerce Platform",
+    description:
+      "A full-featured e-commerce platform with product management, cart functionality, and secure checkout.",
+    image: "/ecommerce.png",
+    technologies: ["React", "Redux", "Sass", "Node", "Strapi", "Stripe"],
+    github: "",
+    demo: "https://www.linkedin.com/posts/gageldev_reactjs-vitejs-ecommerce-activity-7089321261910171648-R6GX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACSBMi4BVwODlNdmH49pL3B9CCKWPnq348s",
   },
 ];
 
@@ -66,35 +64,6 @@ export function Projects() {
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="flex justify-between">
-                <Button
-                  asChild
-                  variant="outline"
-                  size="sm"
-                  disabled={!project.github}
-                  className={!project.github ? "opacity-50 cursor-not-allowed" : ""}
-                >
-                  {project.github ? (
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" /> GitHub
-                    </a>
-                  ) : (
-                    <span className="flex items-center">
-                      <Github className="mr-2 h-4 w-4" /> Private
-                    </span>
-                  )}
-                </Button>
-                <Button
-                  asChild
-                  size="sm"
-                  disabled={!project.demo}
-                  className={!project.demo ? "opacity-50 cursor-not-allowed" : ""}
-                >
-                  <a href={project.demo || "#"} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4" /> Demo
-                  </a>
-                </Button>
-              </CardFooter>
             </Card>
           </motion.div>
         ))}
