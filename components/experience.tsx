@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    title: "Full-Stack Developer",
-    company: "Automatize Cloud",
-    period: "Jan 2023 - Present",
+    title: "Fullstack Developer",
+    company: "Supermercados Pague Menos",
+    period: "Abr 2025 - Present",
     description:
-      "Developing and maintaining SaaS applications for industrial companies, focusing on frontend development with real-time updates.",
+      "Led the development team and continuous evolution of a high-scale mobile and web applications, growing daily active users from 6k to 30k, increasing average session time from 3 to 12 minutes, and scaling APIs to handle 3k requests per second. Delivered major UI, performance, and personalization improvements, built interactive features, and developed web and mobile solutions using React, Vue, Flutter, and Node.js, while managing CI/CD pipelines and cloud infrastructure with Docker and Kubernetes.",
   },
   {
     title: "Freelance Frontend Developer",
@@ -17,6 +17,13 @@ const experiences = [
     period: "Jun 2023 - Present",
     description:
       "Worked on various client projects, creating responsive and interactive web applications using modern frontend technologies.",
+  },
+  {
+    title: "Full-Stack Developer",
+    company: "Automatize Cloud",
+    period: "Jan 2023 - Abr 2025",
+    description:
+      "Developing and maintaining SaaS applications for industrial companies, focusing on frontend development with real-time updates.",
   },
 ];
 
