@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Loading } from "./Loading";
+import { Loading } from "./loading";
 
 interface LoadingProviderProps {
   children: React.ReactNode;
