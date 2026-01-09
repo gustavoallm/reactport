@@ -19,15 +19,15 @@ export function Navigation() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="w-full px-4 py-6 flex justify-between items-center">
         <Link
           href="#home"
-          className="text-xl font-bold flex items-center hover:text-muted-foreground space-x-2 transition-colors"
+          className="ml-[2rem] md:ml-[5rem] text-xl font-bold flex items-center hover:text-muted-foreground space-x-2 transition-colors"
         >
           <img src="/favicon.ico" alt="logo" />
           <span>Gustavo A. Carvalho</span>
         </Link>
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden md:flex mr-[2rem] md:mr-[5rem] space-x-4">
           {navItems.map((item) => (
             <Link
               key={item.name}
@@ -48,13 +48,13 @@ export function Navigation() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="md:hidden"
+            className="md:hidden text-center"
           >
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="block px-4 py-2 text-sm hover:bg-accent"
+                className="block px-4 py-2 text-sm hover:bg-accent/50"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
