@@ -1,5 +1,5 @@
+import { LoadingProvider } from "@/components/loading-provider";
 import { ThemeProvider } from "@/components/theme-provider";
-import { LoadingProvider } from "@/components/LoadingProvider";
 import { Inter } from "next/font/google";
 import type React from "react";
 import "./globals.css";
@@ -40,9 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning={true}>
       <body className={inter.className} suppressHydrationWarning={true}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <LoadingProvider>
-            {children}
-          </LoadingProvider>
+          <LoadingProvider>{children}</LoadingProvider>
         </ThemeProvider>
       </body>
     </html>

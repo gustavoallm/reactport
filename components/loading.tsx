@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 
 interface LoadingProps {
@@ -15,7 +14,7 @@ export function Loading({ onComplete }: LoadingProps) {
 
       const cleanupTimer = setTimeout(() => {
         onComplete?.();
-      }, 1000);
+      }, 1500);
 
       return () => clearTimeout(cleanupTimer);
     }, 100);
@@ -28,7 +27,7 @@ export function Loading({ onComplete }: LoadingProps) {
       className="fixed inset-0 z-[9999] overflow-hidden text-white"
       style={{
         transform: isAnimating ? "translateY(0)" : "translateY(-105%)",
-        transition: "transform 1000ms cubic-bezier(0.65, 0, 0.35, 0.8)",
+        transition: "transform 1500ms cubic-bezier(0.65, 0, 0.35, 0.8)",
       }}
     >
       <div className="absolute inset-0 bg-background backdrop-blur-sm" />
