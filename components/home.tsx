@@ -5,7 +5,6 @@ import { particlesOptions } from "@/lib/particlesOptions";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 
@@ -28,9 +27,13 @@ export function Home() {
         <Particles id="tsparticles" options={options} className="absolute inset-0 w-full h-full z-10" />
       )}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        initial={{ y: "100%" }}
+        animate={{ y: ["100%", "-5%", "0%"] }}
+        transition={{
+          duration: 1,
+          ease: "easeOut",
+          times: [0, 0.85, 1],
+        }}
         className="text-center z-20"
       >
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Gustavo de Almeida Carvalho</h1>
@@ -56,10 +59,8 @@ export function Home() {
           something remarkable together!
         </p>
         <div className="flex justify-center space-x-4 mb-8">
-          <Button asChild variant="default">
-            <a href="#projects">
-              View Projects <ArrowRight className="ml-2 h-4 w-4" />
-            </a>
+          <Button asChild variant="outline" className="bg-background/30">
+            <a href="#projects">View Projects</a>
           </Button>
           <Button asChild variant="outline">
             <a href="#contact">Get in Touch</a>
